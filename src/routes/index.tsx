@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import about from "@/assets/about.jpg";
-import work2 from "@/assets/work-2.jpg";
-import work3 from "@/assets/work-3.jpg";
+import founder from "@/assets/founder.jpg.asset.json";
+import analytics from "@/assets/work-analytics.jpg.asset.json";
+import wellness from "@/assets/work-wellness.jpg.asset.json";
 
 const GITHUB = "https://github.com/";
 const WA = "https://wa.me/27812448616";
@@ -59,8 +59,8 @@ const services = [
 ];
 
 const work = [
-  { img: work2, t: "Aurora Analytics", c: "Web Application · Dashboard" },
-  { img: work3, t: "Nourish Wellness", c: "UI/UX · Mobile Design" },
+  { img: analytics.url, t: "Aurora Analytics", c: "Web Application · Dashboard" },
+  { img: wellness.url, t: "Nourish Wellness", c: "Wellness Brand · Website" },
 ];
 
 const contacts = [
@@ -126,13 +126,20 @@ function Index() {
 
         <section id="work" className="px-5 py-24">
           <div className="mx-auto max-w-6xl">
-            <p className="text-xs uppercase tracking-[0.35em] text-primary">Portfolio</p>
-            <h2 className="mt-3 text-4xl md:text-6xl">Selected work</h2>
+            <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+              <div>
+                <p className="text-xs uppercase tracking-[0.35em] text-primary">Portfolio</p>
+                <h2 className="mt-3 text-4xl md:text-6xl">Selected work</h2>
+              </div>
+              <p className="max-w-sm font-light text-muted-foreground">
+                A small selection of websites, dashboards and brand experiences built for clients across South Africa and beyond.
+              </p>
+            </div>
             <div className="mt-14 grid gap-10 md:grid-cols-2">
               {work.map((w) => (
                 <article key={w.t} className="group">
                   <div className="overflow-hidden rounded-md shadow-soft">
-                    <img src={w.img} alt={w.t} loading="lazy" width={1024} height={768} className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-105 md:aspect-auto" />
+                    <img src={w.img} alt={w.t} loading="lazy" width={1400} height={933} className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-105 md:aspect-auto" />
                   </div>
                   <div className="mt-5 flex items-baseline justify-between">
                     <h3 className="text-2xl md:text-3xl">{w.t}</h3>
@@ -147,8 +154,8 @@ function Index() {
         <section id="about" className="bg-secondary px-5 py-24">
           <div className="mx-auto grid max-w-6xl items-center gap-14 md:grid-cols-2">
             <div className="relative">
-              <div className="absolute -inset-3 rounded-md border border-primary/40" />
-              <img src={about} alt="Founder and lead developer of Dipeutech" loading="lazy" width={896} height={1152} className="relative w-full rounded-md object-cover shadow-soft" />
+              <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-md border border-primary/40" />
+              <img src={founder.url} alt="Founder and lead developer of Dipeutech" loading="lazy" width={1080} height={860} className="relative w-full rounded-md object-cover shadow-soft" />
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.35em] text-primary">About me</p>
