@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import founder from "@/assets/founder.jpg.asset.json";
-import work2 from "@/assets/work-2-real.jpg";
-import work3 from "@/assets/work-3-real.jpg";
+import analytics from "@/assets/work-analytics.jpg.asset.json";
+import wellness from "@/assets/work-wellness.jpg.asset.json";
 
 const GITHUB = "https://github.com/";
 const WA = "https://wa.me/27812448616";
