@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import about from "@/assets/about.jpg";
+import founder from "@/assets/founder.jpg.asset.json";
 import work2 from "@/assets/work-2.jpg";
 import work3 from "@/assets/work-3.jpg";
 
@@ -148,7 +148,7 @@ function Index() {
           <div className="mx-auto grid max-w-6xl items-center gap-14 md:grid-cols-2">
             <div className="relative">
               <div className="absolute -inset-3 rounded-md border border-primary/40" />
-              <img src={about} alt="Founder and lead developer of Dipeutech" loading="lazy" width={896} height={1152} className="relative w-full rounded-md object-cover shadow-soft" />
+              <img src={founder.url} alt="Founder and lead developer of Dipeutech" loading="lazy" width={1080} height={860} className="relative w-full rounded-md object-cover shadow-soft" />
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.35em] text-primary">About me</p>
