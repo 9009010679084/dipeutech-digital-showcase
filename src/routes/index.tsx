@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import about from "@/assets/about.jpg";
-import work1 from "@/assets/work-1.jpg";
 import work2 from "@/assets/work-2.jpg";
 import work3 from "@/assets/work-3.jpg";
 
@@ -60,7 +59,6 @@ const services = [
 ];
 
 const work = [
-  { img: work1, t: "Éclat Jewellery", c: "E-commerce · Web Development" },
   { img: work2, t: "Aurora Analytics", c: "Web Application · Dashboard" },
   { img: work3, t: "Nourish Wellness", c: "UI/UX · Mobile Design" },
 ];
