@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import about from "@/assets/about.jpg";
-import work1 from "@/assets/work-1.jpg";
 import work2 from "@/assets/work-2.jpg";
 import work3 from "@/assets/work-3.jpg";
 
@@ -60,7 +59,6 @@ const services = [
 ];
 
 const work = [
-  { img: work1, t: "Éclat Jewellery", c: "E-commerce · Web Development" },
   { img: work2, t: "Aurora Analytics", c: "Web Application · Dashboard" },
   { img: work3, t: "Nourish Wellness", c: "UI/UX · Mobile Design" },
 ];
@@ -131,8 +129,8 @@ function Index() {
             <p className="text-xs uppercase tracking-[0.35em] text-primary">Portfolio</p>
             <h2 className="mt-3 text-4xl md:text-6xl">Selected work</h2>
             <div className="mt-14 grid gap-10 md:grid-cols-2">
-              {work.map((w, i) => (
-                <article key={w.t} className={`group ${i === 0 ? "md:col-span-2" : ""}`}>
+              {work.map((w) => (
+                <article key={w.t} className="group">
                   <div className="overflow-hidden rounded-md shadow-soft">
                     <img src={w.img} alt={w.t} loading="lazy" width={1024} height={768} className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-105 md:aspect-auto" />
                   </div>
