@@ -59,8 +59,8 @@ const services = [
 ];
 
 const work = [
-  { img: work2, t: "Aurora Analytics", c: "Web Application · Dashboard" },
-  { img: work3, t: "Nourish Wellness", c: "UI/UX · Mobile Design" },
+  { img: analytics.url, t: "Aurora Analytics", c: "Web Application · Dashboard" },
+  { img: wellness.url, t: "Nourish Wellness", c: "UI/UX · Mobile Design" },
 ];
 
 const contacts = [
